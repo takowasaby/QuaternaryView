@@ -12,6 +12,9 @@ public:
 	CircleObject(const Define::Color& color, value_type radius, value_type mass, const Define::Vec2& position, const Define::Vec2& velocity, const Define::Vec2& acceleration);
 	void draw() const;
 
+	const CircleColider& circleColider() const;
+	const RigidBody& rigidBody() const;
+
 private:
 	Define::Color color_;
 

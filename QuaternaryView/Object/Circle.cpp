@@ -12,3 +12,13 @@ void CircleObject::draw() const
 {
 	Circle(rigidBody_.position(), circleColider_.radius()).draw(color_);
 }
+
+const CircleColider & CircleObject::circleColider() const
+{
+	return circleColider_;
+}
+
+const RigidBody & CircleObject::rigidBody() const
+{
+	return rigidBody_;
+}
