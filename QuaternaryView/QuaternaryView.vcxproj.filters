@@ -61,10 +61,28 @@
     <Filter Include="Resource Files\nlp\japanese\jumanpp">
       <UniqueIdentifier>{f6fe2a89-c647-48e2-bb2c-27b03b1aeced}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Quaternary">
+      <UniqueIdentifier>{0274c89f-565a-4c14-a2bf-c77e6e095f19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Object">
+      <UniqueIdentifier>{6a70fb40-4e9c-47ee-9523-1cd3f22d739c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Calculation">
+      <UniqueIdentifier>{d62d3729-35ff-4948-be13-2ee423e71e0e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\CircleColider.cpp">
+      <Filter>Source Files\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\RigidBody.cpp">
+      <Filter>Source Files\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Circle.cpp">
+      <Filter>Source Files\Object</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -231,5 +249,22 @@
     <Xml Include="App\example\test.xml">
       <Filter>Resource Files\example</Filter>
     </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Calculation\eCalculationBackend.h">
+      <Filter>Source Files\Calculation</Filter>
+    </ClInclude>
+    <ClInclude Include="Define.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Circle.h">
+      <Filter>Source Files\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\CircleColider.h">
+      <Filter>Source Files\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\RigidBody.h">
+      <Filter>Source Files\Object</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
