@@ -8,7 +8,7 @@ CircleObject::CircleObject(const Define::Color& color, value_type radius, value_
 {
 }
 
-void CircleObject::draw()
+void CircleObject::draw() const
 {
 	Circle(rigidBody_.position(), circleColider_.radius()).draw(color_);
 }

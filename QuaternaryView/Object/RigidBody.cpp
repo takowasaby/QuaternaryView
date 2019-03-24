@@ -6,7 +6,7 @@ RigidBody::RigidBody(value_type mass, const Define::Vec2& position, const Define
 {
 }
 
-Define::Vec2&& RigidBody::position()
+Define::Vec2&& RigidBody::position() const
 {
 	return Define::Vec2(currentValue_.positionX_, currentValue_.positionY_);
 }

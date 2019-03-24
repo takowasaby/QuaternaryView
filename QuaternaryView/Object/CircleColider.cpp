@@ -5,7 +5,7 @@ CircleColider::CircleColider(value_type radius) :
 {
 }
 
-CircleColider::value_type CircleColider::radius()
+CircleColider::value_type CircleColider::radius() const noexcept
 {
 	return radius_;
 }
