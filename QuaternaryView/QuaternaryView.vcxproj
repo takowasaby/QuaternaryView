@@ -200,6 +200,7 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Object\Circle.cpp" />
     <ClCompile Include="Object\CircleColider.cpp" />
+    <ClCompile Include="Object\ColiderBase.cpp" />
     <ClCompile Include="Object\RigidBody.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -270,7 +271,9 @@
     <ClInclude Include="Define.h" />
     <ClInclude Include="Object\Circle.h" />
     <ClInclude Include="Object\CircleColider.h" />
+    <ClInclude Include="Object\ColiderBase.h" />
     <ClInclude Include="Object\RigidBody.h" />
+    <ClInclude Include="Quaternary\QuaternaryTree.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

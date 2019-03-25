@@ -25,7 +25,7 @@ public:
 	RigidBody(value_type mass, const Define::Vec2& position, const Define::Vec2& velocity, const Define::Vec2& acceleration);
 	void update();
 
-	Define::Vec2 position() const;
+	const Define::Vec2& position() const;
 
 private:
 	Value currentValue_;

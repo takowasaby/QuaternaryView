@@ -16,7 +16,7 @@ void RigidBody::update()
 	currentValue_.positionY_ += currentValue_.velocityY_;
 }
 
-Define::Vec2 RigidBody::position() const
+const Define::Vec2& RigidBody::position() const
 {
 	return Define::Vec2(currentValue_.positionX_, currentValue_.positionY_);
 }

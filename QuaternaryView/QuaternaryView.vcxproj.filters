@@ -84,6 +84,9 @@
     <ClCompile Include="Object\Circle.cpp">
       <Filter>Source Files\Object</Filter>
     </ClCompile>
+    <ClCompile Include="Object\ColiderBase.cpp">
+      <Filter>Source Files\Object</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="App\icon.ico">
@@ -264,6 +267,12 @@
       <Filter>Source Files\Object</Filter>
     </ClInclude>
     <ClInclude Include="Object\RigidBody.h">
+      <Filter>Source Files\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Quaternary\QuaternaryTree.h">
+      <Filter>Source Files\Quaternary</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\ColiderBase.h">
       <Filter>Source Files\Object</Filter>
     </ClInclude>
   </ItemGroup>

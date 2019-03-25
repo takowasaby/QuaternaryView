@@ -1,14 +1,14 @@
 #pragma once
 
 #include "../Define.h"
+#include "ColiderBase.h"
 
-class CircleColider
+class CircleColider : public ColiderBase
 {
 public:
 	using value_type = Define::value_type;
 
 	CircleColider(value_type radius);
-	void update(Define::Vec2 position);
 
 	value_type radius() const noexcept;
 

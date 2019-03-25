@@ -16,7 +16,8 @@ void CircleObject::update()
 
 void CircleObject::draw() const
 {
-	Circle(rigidBody_.position(), circleColider_.radius()).draw(color_);
+	auto position = rigidBody_.position();
+	Circle(position, circleColider_.radius()).draw(color_);
 }
 
 const CircleColider & CircleObject::circleColider() const
