@@ -6,7 +6,17 @@ RigidBody::RigidBody(value_type mass, const Define::Vec2& position, const Define
 {
 }
 
-Define::Vec2&& RigidBody::position() const
+void RigidBody::update()
+{
+	preValue_ = currentValue_;
+
+	currentValue_.velocityX_ += currentValue_.accelerationX_;
+	currentValue_.velocityY_ += currentValue_.accelerationY_;
+	currentValue_.positionX_ += currentValue_.velocityX_;
+	currentValue_.positionY_ += currentValue_.velocityY_;
+}
+
+Define::Vec2 RigidBody::position() const
 {
 	return Define::Vec2(currentValue_.positionX_, currentValue_.positionY_);
 }

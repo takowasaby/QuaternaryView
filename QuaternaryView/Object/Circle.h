@@ -10,6 +10,7 @@ public:
 	using value_type = Define::value_type;
 
 	CircleObject(const Define::Color& color, value_type radius, value_type mass, const Define::Vec2& position, const Define::Vec2& velocity, const Define::Vec2& acceleration);
+	void update();
 	void draw() const;
 
 	const CircleColider& circleColider() const;
